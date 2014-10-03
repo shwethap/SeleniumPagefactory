@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Wikipidea Test]" parallel="tests">
+  <parameter name="Browser" value="f"/>
+  <test name="Wiki in firefox(failed)" parallel="tests">
+    <parameter name="Browser" value="f"/>
+    <classes>
+      <class name="selenium.WebDriverTest">
+        <methods>
+          <include name="RegistrationTestNew" invocation-numbers="0 1"/>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- selenium.WebDriverTest -->
+    </classes>
+  </test> <!-- Wiki in firefox(failed) -->
+</suite> <!-- Failed suite [Wikipidea Test] -->

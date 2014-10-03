@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Wikipidea Test" verboss="2" parallel="tests">
+<test name="Wiki in firefox">
+<parameter name="Browser" value="f"></parameter>
+
+<classes>
+<class name="selenium.WebDriverTest" >
+<methods>
+<include name="print1" />
+<exclude name="TestWiki" />
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="Wiki in Chrome">
+<parameter name="Browser" value="c"></parameter>
+<classes>
+<class name="selenium.WebDriverTest" >
+<methods>
+<include name="TestWiki" />
+</methods>
+</class>
+</classes>
+</test>
+
+
+
+</suite>
+
